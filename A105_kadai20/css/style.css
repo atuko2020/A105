@@ -1,0 +1,91 @@
+@charset "UTF-8";
+body{
+     margin: 0px;
+     background-image: url("../images/bg.png");
+     
+}
+div#container{
+     width: 100%;
+     margin:0 auto;
+     line-height: 1.8;
+     font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro W4",sans-serif;
+}
+.TopBottom{
+    color: rgb(28, 135, 55);
+    background-color: rgb(255, 157, 112);
+}
+header{
+     height: 300px;
+     list-style-position: inside;
+     list-style-image: url(../images/star.png);
+     text-align: center;
+}
+main{
+    padding: 1rem 0rem;
+    min-width: 340px;
+    width: 80%;
+    margin: 0 auto;
+
+    color: rgb(30, 150, 60);
+    background-color: rgb(255, 215, 160);
+
+}
+h1{
+     margin: 0px;
+     padding: 1rem 1rem 0rem;
+     font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+h2{
+     padding: 0.5rem 0.5rem 0rem;
+     font-family: "游ゴシック", "Yu Gothic", YuGothic, sans-serif;
+     border-bottom: 0.5rem double rgb(120, 120, 120);
+     border-left: 0.5rem solid rgb(40,40,40);
+     text-align: center;
+}
+section{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+p{
+     padding: 0rem 1rem;
+     text-align: justify;
+     color: rgb(0, 0, 0);
+}
+section img{
+    width: 35%;
+    min-width: 200px;
+}
+section p{
+    width: 55%;
+    min-width: 320px;
+    margin: 0rem 1rem;
+}
+main section:nth-child(1) p{
+    float: left;
+}
+main section:nth-child(1) img{
+    padding-right: 1rem;
+}
+main section:nth-child(2) p{
+    width: 100%;
+}
+main section:nth-child(3) p{
+    float: right;
+}
+main section:nth-child(3) img{
+    padding-left: 1rem;
+}
+
+q{
+     font-size: 1.2rem;
+}
+footer p{
+    margin: 0rem auto;
+    padding: 26px 0px;
+    width: 100%;
+    text-align: center;
+}

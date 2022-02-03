@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+     background-image: url("../images/bg.png");
+}
+h1{
+     font-family: 'M PLUS Rounded 1c', sans-serif;
+     color: rgb(28, 135, 55);
+     background-color: rgb(255, 157, 112);
+}
+h2{
+     font-family: "游ゴシック", "Yu Gothic", YuGothic, sans-serif;
+     color: rgb(30, 150, 60);
+     background-color: rgb(255, 215, 160);
+}
+img{
+    width: 100%;
+}
+p{
+     font-family: "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", sans-serif;
+     text-align: justify;
+     line-height: 1.7;
+     color: rgb(0, 0, 0);
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A105_私の詳細</title>
+    <meta name="description" content="このページを読むだけで、島田司のすべてがわかる!?">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ff9696">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pagetop.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+<div id="container">
+    <!-- header Section -->
+    <header>
+    <div id="menu">
+        <h1 class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="Shimada's logo">
+            Shimada's Portfolio
+            </a>
+        </h1>
+        <nav>
+            <ul class="main">
+                <li><a href="index.html">home</a></li>
+                <li><a href="works.html">works</a></li>
+                <li><a href="contact_me.html">contact</a></li>
+                
+                </ul>
+        </nav>
+    </div>
+
+        <div id="gallery">
+            <h2 class="page-title">島田 司</h2>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- main -->
+<div id="wrapper">
+    <main id="main">
+        <!-- section -->
+        <section>
+            <h2>About Me</h2>
+            <div id="about">
+                <p>
+                    本とゲームが大好きな専門学生です。<br>
+                    SFやストラテジーなどの"技術の進歩"を感じられる作品が特に好みです。<br>
+                    駿台電子情報&ビジネス専門学校に入学した理由も"情報・IT"という急成長している技術の発展に自分も参加したいと考えたからです。<br>
+                    今はオラクルjava試験のシルバーを目指し、勉強中です。
+                </p>
+            
+
+                <div class="table">
+                <table>
+                    <caption>profile</caption>
+                    <tr>
+                        <th>出席番号</th>
+                        <td>A105</td>
+                        <td rowspan="4"><img src="images/japan.jpg" alt="日の丸japan"></td>
+                    </tr>
+                    <tr>
+                        <th>名前</th>
+                        <td>島田司</td>
+                    </tr>
+                    <tr>
+                        <th>得意科目</th>
+                        <td>プログラミング</td>
+                    </tr>
+                    <tr>
+                        <th>趣味</th>
+                        <td>読書・ゲーム</td>
+                    </tr>
+               
+                </table>
+                <!--<br>-->
+                <table> 
+                
+                <caption>schedule</caption>
+                <tr>
+                    <th>曜日</th>
+                    <th>1限</th>
+                    <th>2限</th>
+                    <th>3限</th>
+                    <th>4限</th>
+                </tr>
+                <tr>
+                    <td>月</td>
+                    <td>--</td>
+                    <td>オラクルDB</td>
+                    <td colspan="2">プログラミング</td>
+                </tr>
+                <tr>
+                    <td>火</td>
+                    <td>プログラミング</td>
+                    <td>アルゴリズム</td>
+                    <td>情報倫理学</td>
+                    <td>--</td>
+                </tr>   
+                <tr>
+                    <td>水</td>
+                    <td>--</td>
+                    <td>LINUX</td>
+                    <td>ビッグデータ</td>
+                    <td>経営学</td>
+                </tr>   
+                <tr>
+                    <td>木</td>
+                    <td>英会話</td>
+                    <td colspan="2">コンピュータシステム</td>
+                    <td>HR</td>
+                </tr>   
+                <tr>
+                    <td>金</td>
+                    <td>--</td>
+                    <td>ビジネスリテラシー</td>
+                    <td colspan="2">ネットワーク</td>
+                </tr>
+                </table> 
+            </div>
+            </div>
+        </section>
+        <!-- /section -->
+        <p class="pagetop">
+            <a href="#" title="ページトップへ戻る">
+                <img src="images/pagetop.png" alt="▲PAGE TOP">
+            </a>
+        </p>
+    </main>
+</div>
+    <!-- footer Section -->
+    <footer>
+        <p>
+            Last Modified:
+            <script>
+                var youbi = ['日','月','火','水','木','金','土','日'];
+                var modified =new Date(document.lastModified);
+                var year = modified.getFullYear();
+                var month = modified.getMonth() + 1;
+                var date = modified.getDate();
+                var day = modified.getDay();
+
+                document.write(year + "年" + month + "月" + date + "日" + youbi[day] + "曜日");
+            </script>
+        </p>
+        <p><small>&copy;Shimada Tsukasa,All Rigths Reserved.</small></p>
+    </footer>
+    <!-- /footer-->
+</div>  
+</body>
+</html>

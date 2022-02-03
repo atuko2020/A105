@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*works*/
+#works a{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    font-size: 2em;
+    color: #1A4472;
+    box-sizing: border-box;    
+    
+}
+#works p{
+    margin: 0;
+    text-align: center;
+}
+#works div{
+    position: relative;
+    bottom: 15px;
+}
+#works #kadai9 p{
+    background-image: url("../images/kadai9.png");
+    background-size: cover;
+}
+#works #kadai10 p{
+    background-image: url("../images/kadai10.png");
+    background-size: cover;
+}
+#works #kadai21 p{
+    background-image: url("../images/kadai20.png");
+    background-size: cover;
+}
+#works #kadai22 p{
+    background-image: url("../images/kadai21.png");
+    background-size: cover;
+}
+#works #kadai23 p{
+    background-image: url("../images/kadai22.png");
+    background-size: cover;
+}
+#works{
+    display: grid;
+    grid-template-rows:repeat(auto-fit,200px);
+    grid-template-columns:repeat(auto-fit, 200px);
+    justify-content: space-around;
+    gap: 15px;
+}
+
+/*Animation-start*/
+#works a{
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    transform: scaleY(0);
+}
+#works a:visited{
+    color: darkred;
+}
+#works div:hover a{
+    opacity: 1;
+    border: solid rgb(74, 105, 82) 3px;
+    transform: scaleY(1);
+    background-color: rgb(231, 231, 0);
+}
+
+/*about_me*/
+#about p{
+    padding: 0 1rem;
+    text-align: center;
+}
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#about table{
+    border-collapse: collapse;
+    margin:1rem;
+}
+#about th,td{
+    border: 2px solid rgb(0, 0, 0);
+    font-size: .8em;
+    padding: 2px;
+}
+#about th,td:nth-child(1){
+    background-color: bisque;
+}
+#about .table th{
+    text-align-last: justify;
+}
+
+/*contact_me*/
+#contact form label input{
+    margin: 3% 0;
+}
+#contact .text input{
+    border: none;
+    border-bottom: solid 1px dimgray;
+}
+#contact form textarea{
+    border: solid 1px black;
+}
+#contact form label{
+    line-height: 2em;
+}
+#contact form .button {
+    margin: 1em auto;
+    position: relative;
+    left: 12rem;
+    border-radius: 5px;
+    font-size: 18pt; 
+    text-align: center;
+    cursor: pointer;
+    padding: 13px 26px;
+    background: #74325c;
+    color: white;
+    line-height: 2em;
+    box-shadow: 3px 5px black;
+    }
+#contact form .button:hover {
+    background-color: #622c4d;
+}
+#contact form .button:active {
+    box-shadow: none;
+}
+#contact form *:invalid{
+    border-color: red;
+}
+@media screen and (max-width:767px) {
+    #contact form .text input,textarea{
+        width: 80%;
+    }
+    #gallary .page-title{
+        font-size: 2rem;
+    }
+    #contact form .button input{
+    position:static;
+    margin:1em auto;
+    }
+}

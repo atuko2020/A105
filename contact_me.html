@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A105_連絡フォーム</title>
+    <meta name="description" content="お問い合わせはこちらから">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ff9696">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pagetop.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+<div id="container">
+    <!-- header Section -->
+    <header>
+        <header>
+            <div id="menu">
+            <h1 class="logo">
+                <a href="index.html">
+                <img src="images/logo.png" alt="Shimada's logo">
+                Shimada's Portfolio
+                </a>
+            </h1>
+            <nav>
+                <ul class="main">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about_me.html">about</a></li>
+                    <li><a href="works.html">works</a></li>
+                    </ul>
+            </nav>
+            </div>
+    
+            <div id="gallery">
+                <h2 class="page-title">島田 司</h2>
+            </div>
+        </header>
+    </header>
+    <!-- /header -->
+    <!-- main -->
+<div id="wrapper">
+    <main id="main">
+        <!-- section -->
+        <section>
+            <h2>Contact Me</h2>
+            <div id="contact">
+                <form action="#" method="POST" name="contact-form">
+                    <div class="text">
+                        <label>名前:<input type="text" name="name" placeholder="名前を入力" required maxlength="15"></label>
+                        <br>
+                        <label>メール:<input type="email" name="email" placeholder="Eメールアドレスを入力" required></label>
+                        <br>
+                        <label>電話番号:<input type="tel" name="TelePhone" placeholder="電話番号を入力" required pattern="[0-9]{3}-?[0-9]{3,4}-?[0-9]{4}"></label>
+                        <br>
+                        <label>メッセージ(任意):<textarea name="messege" placeholder="メッセージを入力" cols="50" rows="5"></textarea></label>
+                    </div>
+                        <input class="button" type="submit" value="送信" >
+                </form>
+            </div>
+        </section>
+        <!-- /section -->
+        <p class="pagetop">
+            <a href="#" title="ページトップへ戻る">
+                <img src="images/pagetop.png" alt="▲PAGE TOP">
+            </a>
+        </p>
+    </main>
+</div>
+    <!-- /main -->
+    <!-- footer Section -->
+    <footer>
+        <p>
+            Last Modified:
+            <script>
+                var youbi = ['日','月','火','水','木','金','土','日'];
+                var modified =new Date(document.lastModified);
+                var year = modified.getFullYear();
+                var month = modified.getMonth() + 1;
+                var date = modified.getDate();
+                var day = modified.getDay();
+
+                document.write(year + "年" + month + "月" + date + "日" + youbi[day] + "曜日");
+            </script>
+        </p>
+        <p><small>&copy;Shimada Tsukasa,All Rigths Reserved.</small></p>
+    </footer>
+    <!-- /footer-->
+</div>  
+</body>
+</html>
