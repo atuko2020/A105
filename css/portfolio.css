@@ -126,6 +126,20 @@
     border-color: red;
 }
 @media screen and (max-width:767px) {
+    #contact form .button {
+        margin: 1em auto;
+        position: relative;
+        left: 0;
+        border-radius: 5px;
+        font-size: 18pt; 
+        text-align: center;
+        cursor: pointer;
+        padding: 13px 26px;
+        background: #74325c;
+        color: white;
+        line-height: 2em;
+        box-shadow: 3px 5px black;
+        }
     #contact form .text input,textarea{
         width: 80%;
     }

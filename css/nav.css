@@ -15,7 +15,11 @@ header{
  }
  a{
      color: #1A4472;
-     text-decoration: none;     
+     text-decoration: none;
+ }
+ a img{
+     position: relative;
+     top: 0.65rem;
  }
  
  .main{
@@ -87,10 +91,6 @@ h1.logo img{
         border-bottom: 2px dotted dimgrey;
     }
 
-    h1{
-        font-size: 1.85em;
-        font-weight: normal;
-    }
     .logo{
         margin-top: 10px;
     }
@@ -98,6 +98,9 @@ h1.logo img{
         padding: 0;
         margin: 0 auto;
          display: block;
+    }
+    h1{
+        font-size: 1.8rem;
     }
     .main li{
         border-bottom: 2px dotted dimgrey;
@@ -118,11 +121,5 @@ h1.logo img{
     }
     #menu{
        flex-direction: column;
-    }
-}
-@media screen and (max-width:500px) {
-    h1{
-        font-size: 1.2em;
-        font-weight: normal;
     }
 }
